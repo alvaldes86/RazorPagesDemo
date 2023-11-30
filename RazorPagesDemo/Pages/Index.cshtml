@@ -1,0 +1,20 @@
+﻿@page  
+
+@*line below is refering to the IndelModel which is the Index.cshtml.cs file. The model is what make the page get rendered*@
+@model IndexModel 
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome user id: @Model.Id</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
